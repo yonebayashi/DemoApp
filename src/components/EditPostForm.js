@@ -9,7 +9,7 @@ import {
   Form, FormGroup, Label, Input,
 } from 'reactstrap'
 import { editPost } from '../actions/index'
-import { getPost, updatePost } from '../utils/api'
+import { updatePost } from '../utils/api'
 
 class EditPostForm extends Component {
   state = {
@@ -19,7 +19,8 @@ class EditPostForm extends Component {
   }
 
   componentDidMount() {
-    getPost(this.props.post.id).then(post => this.setState({ title: post.title, body: post.body }))
+    const { post } = this.props
+    this.setState({ title: post.title, body: post.body })
   }
 
   toggle = () => {

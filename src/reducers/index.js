@@ -67,7 +67,7 @@ const posts = (
       const index = findIndex(state.items, item => item.id === post.id)
       return {
         ...state,
-        items: state.items.concat(state.items.splice(index, 1, post))
+        items: Object.assign(state.items, [], { [index]: post })
       }
     case DELETE_POST:
       return {
@@ -115,7 +115,7 @@ const comments = (
       const index = findIndex(state.items, item => item.id === comment.id)
       return {
         ...state,
-        items: state.items.concat(state.items.splice(index, 1, comment))
+        items: Object.assign(state.items, [], { [index]: comment })
       }
     case DELETE_COMMENT:
       return {

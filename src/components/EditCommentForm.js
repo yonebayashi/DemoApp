@@ -9,7 +9,7 @@ import {
   Form, FormGroup, Label, Input,
 } from 'reactstrap'
 import { editComment } from '../actions/index'
-import { getComment, updateComment } from '../utils/api'
+import { updateComment } from '../utils/api'
 
 class EditCommentForm extends Component {
   state = {
@@ -18,7 +18,8 @@ class EditCommentForm extends Component {
   }
 
   componentDidMount() {
-    getComment(this.props.comment.id).then(comment => this.setState({ body: comment.body }))
+    const { comment } = this.props
+    this.setState({ body: comment.body })
   }
 
   toggle = () => {

@@ -15,7 +15,7 @@ import '../styles.css'
 
 class PostDetail extends Component {
 
-  componentWillMount() {
+  componentDidMount() {
     const id = parseInt(get(this.props, ['match', 'params', 'id']))
 
     getPost(id).then(post => this.props.addPost(post))
