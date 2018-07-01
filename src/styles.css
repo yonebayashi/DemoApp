@@ -1,0 +1,72 @@
+.page-container {
+  width: 500px;
+  position: absolute;
+  left: 35%;
+}
+
+.header {
+  font-size: 24px;
+  margin: 25px;
+}
+
+.navbar {
+  background-color: black;
+  height: 60px;
+}
+
+.navbar a {
+  color: white !important;
+  font-size: large;
+  margin-left: 10%;
+}
+
+.post-card {
+  margin-bottom: 0.5em;
+  padding: 1.2em;
+  text-align: left;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-group span:first-child {
+  margin-right: 0.3em;
+}
+
+.comments-container {
+  text-align: left;
+}
+
+.user-card {
+  margin: 0.5em;
+}
+
+.photo-card {
+  display: flex !important;
+  flex-direction: row !important;
+  margin-bottom: 0.5em;
+  padding: 1.2em;
+}
+
+.photo-card-title {
+  text-align: left !important;
+  margin-left: 20px;
+}
+
+.photo-img {
+  width: 150px;
+}
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-comment, .add-post {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
