@@ -1,8 +1,8 @@
-# DemoApp
+# Social Media Dashboard
 
 ## About
 
-A social media dashboard using single page application with this [API](https://jsonplaceholder.typicode.com/)
+A single page application to simulate a social media dashboard using this [API](https://jsonplaceholder.typicode.com). Developed with ReactJS. 
 
 ## Running it
 - `npm install` 
